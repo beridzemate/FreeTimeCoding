@@ -168,3 +168,21 @@ try {
 time_t now = time(0);
 char* dt = ctime(&now);
 cout << "Current date and time: " << dt << endl;
+
+
+void function() {
+    bool error = true;
+    if (error) {
+        throw std::runtime_error("errori agmoxvrilia");
+    }
+}
+
+
+
+try {
+    function();
+} catch (const std::runtime_error& e) {
+    std::cout << "ucnobi error: " << e.what() << std::endl;
+} catch (...) {
+    std::cout << "dacherilia ucnobi errori" << std::endl;
+}
