@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext, useRef, useReducer, useCallback, useMemo } from 'react';
 
 // Functional Component with Hooks
-const App = () => {
-  // useState example
-  const [count, setCount] = useState(0);
+// const App = () => {
+//   // useState example
+//   const [count, setCount] = useState(0);
 
   // useEffect example
   useEffect(() => {
@@ -42,20 +42,20 @@ const App = () => {
     return count * 2;
   }, [count]);
 
-  return (
-    <div>
-      <h1>React Hooks Example</h1>
-      <p>Count: {count}</p>
-      <button onClick={handleClick}>Increment Count</button>
-      <p>Memoized Value: {memoizedValue}</p>
-      <input ref={inputRef} type="text" />
-      <button onClick={focusInput}>Focus Input</button>
-      <p>Reducer Count: {state.count}</p>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <h1>React Hooks Example</h1>
+//       <p>Count: {count}</p>
+//       <button onClick={handleClick}>Increment Count</button>
+//       <p>Memoized Value: {memoizedValue}</p>
+//       <input ref={inputRef} type="text" />
+//       <button onClick={focusInput}>Focus Input</button>
+//       <p>Reducer Count: {state.count}</p>
+//     </div>
+//   );
+// };
 
-export default App;
+// export default App;
 
 
 import React, { useState, useEffect, useCallback } from 'react';
